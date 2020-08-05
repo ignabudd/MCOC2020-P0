@@ -23,7 +23,7 @@
 + Memoria:
   + Total: 8 GB
   + Tipo de memoria: DDR3
-  + Velocidad: 798.4 MHz
+  + Velocidad: 1896.8 MHz
   + Numero de (SO)DIMM: 4
   
 + Disco 1:
