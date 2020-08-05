@@ -11,8 +11,8 @@
   + Velocidad Máxima: 1.9 GHz
   + Número de Núcleos: 4
   + Número de Hilos: 2
-  + Arquitectura: 
-  + Set de instrucciones:
+  + Arquitectura: x64
+  + Set de instrucciones: Intel SSE4.1, Intel SSE4.2
  
 + Tamaño de las cachés del computador:
   + L1 D: 32 KB x 2
@@ -23,7 +23,7 @@
 + Memoria:
   + Total: 8 GB
   + Tipo de memoria: DDR3
-  + Velocidad: 794.4 MHz
+  + Velocidad: 798.4 MHz
   + Numero de (SO)DIMM: 4
   
 + Disco 1:
@@ -33,13 +33,13 @@
   + Particiones: 1
   + Sistema de archivos: NTFS 
 
-+ Dirección MAC de la tarjeta wifi: 
++ Dirección MAC de la red wifi inalámbrica: A8-A7-95-A2-31-E9
 
-+ Dirección IP (Interna, del router): 
++ Dirección IP (Interna, del router): 192.168.1.9
 
-+ Dirección IP (Externa, del ISP): 
++ Dirección IP (Externa, del ISP): 190.215.0.18
 
-+ Proveedor internet: GTD Manquehue
++ Proveedor internet: GTD Manquehue S.A
 
   
   
