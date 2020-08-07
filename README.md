@@ -26,7 +26,7 @@
   + Velocidad: 1896.8 MHz
   + Numero de (SO)DIMM: 4
   
-+ Tarjeta Gráfica:
++ Tarjeta de video integrada:
   + Marca/Modelo: Intel(R) HD Graphics 
   + Memoria: 4181 MB
   + Resolución: 1366 x 768 
