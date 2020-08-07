@@ -27,7 +27,7 @@
   + Numero de (SO)DIMM: 4
   
 + Tarjeta Gráfica:
-  + Intel(R) HD Graphics 
+  + Marca/Modelo: Intel(R) HD Graphics 
   + Memoria: 4181 MB
   + Resolución: 1366 x 768 
   
