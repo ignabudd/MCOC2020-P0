@@ -26,6 +26,11 @@
   + Velocidad: 1896.8 MHz
   + Numero de (SO)DIMM: 4
   
++ Tarjeta Gráfica:
+  + Intel(R) HD Graphics 
+  + Memoria: 4181 MB
+  + Resolución: 1366 x 768 
+  
 + Disco 1:
   + Marca: WDC WD10JPVX-60JC3T0
   + Tipo: HDD
@@ -54,7 +59,7 @@
   + El gráfico de uso de meoria es lineal ya que como cada unidad guardada en una matriz ocupa 8 bytes, es decir una matriz de 10 x 10, tiene 100 unidades guardadas, por lo que esa matriz ocupa 800, luego, al multiplicarla por otra de 10 x 10, se obtiene una tercera matriz. Obteniendo un total de 2400 bytes, o 2.4 KB para las 3 matrices. Es por esto que mientras más grande sea la matriz más bytes ocupara, o sea más memoria, esto aumenta linealmente.
   + El caso del gráfico del tiempo transcurrido no es lineal ya que cada vez que se inicia un proceso, este tiene variadas maneras distintas de empezar, además varía el tiempo si es que uno está utilizando otras aplicaciones al mismo tiempo de la ejecución del programa. 
 + ¿Qué versión de python está usando?
-  + versión 3.8.3
+  + Versión 3.8.3
 + ¿Qué versión de numpy está usando?
   + Numpy: 1.18.5
   + Scipy : 1.5
