@@ -69,5 +69,6 @@
 
 # Desempeño MIMATMUL 
 
+![Desempeño MIMATMUL](https://user-images.githubusercontent.com/69213519/89836874-b08cf980-db35-11ea-927e-1cab9ddcefb4.png)
 
 
