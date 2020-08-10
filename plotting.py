@@ -34,21 +34,18 @@ def plotting(Ncorridas):
     
     plt.subplot(2,1,1)
     plt.loglog(Ns, dts.T, "-o")
-    plt.xlabel("Tamaño de la matriz N")
     plt.ylabel("Tiempo Transcurrido")
     plt.title("Rendimiento A@B")
     plt.grid(True)
-    plt.xticks(xtcks, xtcks, rotation=45)
+    plt.xticks(xtcks, [])
     plt.yticks(ytcks, ytcklab)
     plt.tight_layout()
     
-    plt.show()
     
-    plt.subplot(2,1,1)
+    plt.subplot(2,1,2)
     plt.loglog(Ns, mem, "-o")
     plt.xlabel("Tamaño de la matriz N")
     plt.ylabel("Memoria usada") 
-    plt.title("Rendimiento A@B")
     plt.grid(True)
     plt.xticks(xtcks, xtcks, rotation=45)
     plt.yticks(ytcks2, ytcklab2)
