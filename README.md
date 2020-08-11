@@ -78,4 +78,5 @@
 + ¿A qué se pueden deber las diferencias?
   + Esto se puede deber a que lo mas probable es que el aydante tenga un procesador mejor que el mio, una mayor memoria RAM, y más memoria caché, ya que el mio tiene muy poco de estas, y un procesador básico. 
 + Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar.
-  + 
+![Desempeño MIMATMUL CPU](https://user-images.githubusercontent.com/69213519/89851897-a2ea6a80-db5b-11ea-9aa2-e772554dc514.PNG)
+
