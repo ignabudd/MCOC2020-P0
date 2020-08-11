@@ -46,7 +46,7 @@ for i in range(Ncorridas):
     fid.close()
 
 
-from plotting import plotting 
+from plotting import plotting #Esta función esta definida en otro archivo
 
 plotting(Ncorridas)
 
