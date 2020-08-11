@@ -72,4 +72,10 @@
 
 ![Desempeño MIMATMUL](https://user-images.githubusercontent.com/69213519/89836874-b08cf980-db35-11ea-927e-1cab9ddcefb4.png)
 
-
++ ¿Como difiere del gráfico del profesor/ayudante?
+  + El gráfico del ayudate difiere enormemente en las matrices de mayor tamaño, ya que, su computador se demora 10 min para matrices de 1000 x 1000, en donde en el mio se demora eso para matrices de 500 x 500, sin embargo, para las matrices más chcas, se comportan de manera muy similar en relación al tiempo.
+  + Con respecto a la meoria utilizda, se puede observar que mi gráfico con el del ayudante son muy parecidos, sin embargo a medida que va aumentando el tamaño de la matiz, mi computador utiliza más memoria.
++ ¿A qué se pueden deber las diferencias?
+  + Esto se puede deber a que lo mas probable es que el aydante tenga un procesador mejor que el mio, una mayor memoria RAM, y más memoria caché, ya que el mio tiene muy poco de estas, y un procesador básico. 
++ Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar.
+  + 
