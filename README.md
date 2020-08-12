@@ -104,8 +104,13 @@
 
     # Caso 3: scipy.linalg.inv, overwrite=True
     
-    - 
+    - En este caso se logró que el procesador funcionara a un 86% aprox, lo que se debe a la condición overwrite=True.
+     - Se puede bservar que para matrices de 3000 x 3000, con el tipo half, se demora 7 s y usa una memoria de 20 MB, en cambio con datos longdouble,se demora 5 s y usa una memoria de 100 MB. Se puede concluir que este caso si resulta una ganancia de desempeño con la condición, además es el más eficiente. 
     
+    ![Caso_3_Double](https://user-images.githubusercontent.com/69213519/90064439-c840bb00-dcb8-11ea-902a-ff4f45e1e001.png)
+    ![Caso_3_Half](https://user-images.githubusercontent.com/69213519/90064441-c8d95180-dcb8-11ea-8f10-1f5f2d03fdb1.png)
+    ![Caso_3_LongDouble](https://user-images.githubusercontent.com/69213519/90064444-c8d95180-dcb8-11ea-8155-c5cbb7d07a2f.png)
+    ![Caso_3_Single](https://user-images.githubusercontent.com/69213519/90064447-c971e800-dcb8-11ea-9c55-b2ce95d3a545.png)
     
     
 
