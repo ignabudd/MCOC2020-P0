@@ -37,7 +37,7 @@ for i in range(Ncorridas):
         t2 = perf_counter() 
           
         dt = t2 - t1
-        size = (N**2) * 16           # LongDouble (16 Bytes - 128 bits), varía también
+        size = (N**2) * 8           # LongDouble (8 Bytes - 64 bits), varía también. es igual a Double en mi pc
     
         
         dts.append(dt)
