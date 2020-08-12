@@ -89,6 +89,8 @@
     - El desempeño de np.single y np.double es bastante similar 
     - Se pudo observar en ambos casos el procesador estaba trabajando en aproximadamente un 56%
     - Para matrces de 1000 x 1000, para ambos se obtuvo un tiempo de 0.15 ms y una memoria de 5 MB.
+    ![Caso_1_Double](https://user-images.githubusercontent.com/69213519/90063045-beb65380-dcb6-11ea-858f-403ea97bb673.png)
+    ![Caso_1_Single](https://user-images.githubusercontent.com/69213519/90063048-bfe78080-dcb6-11ea-9da2-02f1b17e1e1f.png)
     
     # Caso 2: scipy.linalg.inv, overwrite=False
     - 
