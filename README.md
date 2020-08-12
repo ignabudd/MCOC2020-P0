@@ -94,22 +94,22 @@
     
     # Caso 2: scipy.linalg.inv, overwrite=False
     - Se logró observar que el procesador se ejecutaba a un 70% aproximadamente, este es más alto que en el caso 1.
-    - Para matrices grandes de 3000 x 3000 so observó que para tipos de datos half se demoró 5 s y ocupó 5 MB, en cambio para datos de tipo longdouble, se demoro 10 s y ocupó 100 MB para el mismo tamaño de matriz. 
+    - Para matrices grandes de 3000 x 3000 so observó que para tipos de datos half se demoró 5 s y ocupó 5 MB, en cambio para datos de tipo longdouble, se demoro 10 s y ocupó 100 MB para el mismo tamaño de matriz. Además, para el long double y double ocupa la misma memoria en el caso de mi pc.
     - A continuación se muestran los gráficos para cada dtype
     
     ![Caso_2_Half](https://user-images.githubusercontent.com/69213519/90063255-1654bf00-dcb7-11ea-90e5-fd2975710d8d.png)
     ![Caso_2_Double](https://user-images.githubusercontent.com/69213519/90063320-2a002580-dcb7-11ea-8587-03b8efa19ae1.png)
-    ![Caso_2_LongDouble](https://user-images.githubusercontent.com/69213519/90063466-6e8bc100-dcb7-11ea-88dc-ff1538bd93ed.png)
+    ![Caso_2_LongDouble](https://user-images.githubusercontent.com/69213519/90070728-58cfc900-dcc2-11ea-8dae-2466d8729a68.png)
     ![Caso_2_Single](https://user-images.githubusercontent.com/69213519/90063505-7cd9dd00-dcb7-11ea-85b3-4679e9f128af.png)
 
     # Caso 3: scipy.linalg.inv, overwrite=True
     
     - En este caso se logró que el procesador funcionara a un 86% aprox, lo que se debe a la condición overwrite=True.
-     - Se puede bservar que para matrices de 3000 x 3000, con el tipo half, se demora 7 s y usa una memoria de 20 MB, en cambio con datos longdouble,se demora 5 s y usa una memoria de 100 MB. Se puede concluir que este caso si resulta una ganancia de desempeño con la condición, además es el más eficiente. 
+     - Se puede bservar que para matrices de 3000 x 3000, con el tipo half, se demora 7 s y usa una memoria de 20 MB, en cambio con datos longdouble,se demora 5 s y usa una memoria de 100 MB. Además, para el long double y double ocupa la misma memoria en el caso de mi pc. Se puede concluir que este caso si resulta una ganancia de desempeño con la condición, además es el más eficiente. 
     
     ![Caso_3_Double](https://user-images.githubusercontent.com/69213519/90064439-c840bb00-dcb8-11ea-902a-ff4f45e1e001.png)
     ![Caso_3_Half](https://user-images.githubusercontent.com/69213519/90064441-c8d95180-dcb8-11ea-8f10-1f5f2d03fdb1.png)
-    ![Caso_3_LongDouble](https://user-images.githubusercontent.com/69213519/90064444-c8d95180-dcb8-11ea-8155-c5cbb7d07a2f.png)
+    ![Caso_3_LongDouble](https://user-images.githubusercontent.com/69213519/90070682-435a9f00-dcc2-11ea-9f25-2cae469eddb7.png)
     ![Caso_3_Single](https://user-images.githubusercontent.com/69213519/90064447-c971e800-dcb8-11ea-9c55-b2ce95d3a545.png)
     
 + ¿Qué algoritmo de inversión cree que utiliza cada método?
