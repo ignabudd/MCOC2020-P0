@@ -112,9 +112,7 @@
     ![Caso_3_LongDouble](https://user-images.githubusercontent.com/69213519/90064444-c8d95180-dcb8-11ea-8155-c5cbb7d07a2f.png)
     ![Caso_3_Single](https://user-images.githubusercontent.com/69213519/90064447-c971e800-dcb8-11ea-9c55-b2ce95d3a545.png)
     
-    
-  + ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?
-    - 
-  + ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? 
++ ¿Qué algoritmo de inversión cree que utiliza cada método?
     -
-    
++ ¿Cómo incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?
+
