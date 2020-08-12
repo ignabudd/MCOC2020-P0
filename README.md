@@ -113,7 +113,7 @@
     ![Caso_3_Single](https://user-images.githubusercontent.com/69213519/90064447-c971e800-dcb8-11ea-9c55-b2ce95d3a545.png)
     
 + ¿Qué algoritmo de inversión cree que utiliza cada método?
-  + Para todos los casos se utiliza Invertible Matrix, esta verifica que el determinante sea distinto de cero, es decir que sea singular, además debe ser cuadrada.
+  + Para todos los casos se utiliza Invertible Matrix, esta verifica que el determinante sea distinto de cero, es decir que sea singular, además debe ser cuadrada. Para el primer caso se usa un algoritmo con la libreria numpy, para los dos siguiente con la libreria scipy.
   + También se utiliza Matriz laplaciana, esta es la representacion matricial de un grafo, en donde en este caso la diagonal tiene un vaor de 2, y sus diagonales en las posiciones i+1 e i-1 tienen un valor de -1. El resto de las posiciones tiene un valor de 0. 
 + ¿Cómo incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?
-  + El pralelismo significa que el procesadr del comptador puede realizar varias actividades o tareas al mismo tiempo, por lo que su rendimiento se va a ver afectado si es que se estan ejecutando otros procesos. En este caso, se ve afetado su desempeño por los tipos de datos en cada caso y por la otras tareas que se están ejecutando. 
+  + El paralelismo significa que el procesador del comptador puede realizar varias actividades o tareas al mismo tiempo, por lo que su rendimiento se va a ver afectado si es que se estan ejecutando otros procesos. En este caso, se ve afetado su desempeño por los tipos de datos en cada caso y por la otras tareas que se están ejecutando. La estructura caché permite que los nucleos y servidores trabajen sobre los datos en paralelo, aprovechando al máximo la potencia. 
