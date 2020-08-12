@@ -93,11 +93,18 @@
     ![Caso_1_Single](https://user-images.githubusercontent.com/69213519/90063048-bfe78080-dcb6-11ea-9da2-02f1b17e1e1f.png)
     
     # Caso 2: scipy.linalg.inv, overwrite=False
-    - Se logró observar que el procesador se ejecutaba a un 70% aproximadamente. 
+    - Se logró observar que el procesador se ejecutaba a un 70% aproximadamente, este es más alto que en el caso 1.
+    - Para matrices grandes de 3000 x 3000 so observó que para tipos de datos half se demoró 5 s y ocupó 5 MB, en cambio para datos de tipo longdouble, se demoro 10 s y ocupó 100 MB para el mismo tamaño de matriz. 
+    - A continuación se muestran los gráficos para cada dtype
     
     ![Caso_2_Half](https://user-images.githubusercontent.com/69213519/90063255-1654bf00-dcb7-11ea-90e5-fd2975710d8d.png)
     ![Caso_2_Double](https://user-images.githubusercontent.com/69213519/90063320-2a002580-dcb7-11ea-8587-03b8efa19ae1.png)
+    ![Caso_2_LongDouble](https://user-images.githubusercontent.com/69213519/90063466-6e8bc100-dcb7-11ea-88dc-ff1538bd93ed.png)
+    ![Caso_2_Single](https://user-images.githubusercontent.com/69213519/90063505-7cd9dd00-dcb7-11ea-85b3-4679e9f128af.png)
+
+    # Caso 3: scipy.linalg.inv, overwrite=True
     
+    - 
     
     
     
