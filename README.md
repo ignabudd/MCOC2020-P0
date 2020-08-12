@@ -84,10 +84,15 @@
 # Desempeño INV
 
   + Análisis desempeño 
-    - Caso 1: Numpy.linalg.inv
+    # Caso 1: Numpy.linalg.inv
     - En este caso no se pudo ejecutar no.half ni np.logdouble, pues no son compatibles con este.
     - El desempeño de np.single y np.double es bastante similar 
-    - Se pudo observar en emabos casos el procesador estaba trabajando en aproximadamente un 56%
+    - Se pudo observar en ambos casos el procesador estaba trabajando en aproximadamente un 56%
+    - Para matrces de 1000 x 1000, para ambos se obtuvo un tiempo de 0.15 ms y una memoria de 5 MB.
+    
+    # Caso 2: scipy.linalg.inv, overwrite=False
+    - 
+    
     
     
 
