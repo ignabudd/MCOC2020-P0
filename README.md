@@ -93,7 +93,11 @@
     ![Caso_1_Single](https://user-images.githubusercontent.com/69213519/90063048-bfe78080-dcb6-11ea-9da2-02f1b17e1e1f.png)
     
     # Caso 2: scipy.linalg.inv, overwrite=False
-    - 
+    - Se logró observar que el procesador se ejecutaba a un 70% aproximadamente. 
+    
+    ![Caso_2_Half](https://user-images.githubusercontent.com/69213519/90063255-1654bf00-dcb7-11ea-90e5-fd2975710d8d.png)
+    ![Caso_2_Double](https://user-images.githubusercontent.com/69213519/90063320-2a002580-dcb7-11ea-8587-03b8efa19ae1.png)
+    
     
     
     
