@@ -81,3 +81,13 @@
   + se hizo una prueba con 10 corridas y se puede ver se está utilizando un procesador. 
 ![Desempeño MIMATMUL CPU](https://user-images.githubusercontent.com/69213519/89852134-302dbf00-db5c-11ea-98e8-48d2d75c082e.PNG)
 
+# Desempeño INV
+
+  + Análisis desempeño 
+    - Caso 1: Numpy.linalg.inv
+    - En este caso no se pudo ejecutar no.half ni np.logdouble, pues no son compatibles con este.
+    - El desempeño de np.single y np.double es bastante similar 
+    - Se pudo observar en emabos casos el procesador estaba trabajando en aproximadamente un 56%
+    
+    
+
