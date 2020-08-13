@@ -97,8 +97,8 @@
     - Para matrices de 1000 x 1000, para ambos se obtuvo un tiempo de 0.15 ms y una memoria de 5 MB.
     - A continuación se muestran los gráficos para cada tipo:
     
-    ![Caso_1_Double](https://user-images.githubusercontent.com/69213519/90063045-beb65380-dcb6-11ea-858f-403ea97bb673.png) 
     ![Caso_1_Single](https://user-images.githubusercontent.com/69213519/90063048-bfe78080-dcb6-11ea-9da2-02f1b17e1e1f.png)
+    ![Caso_1_Double](https://user-images.githubusercontent.com/69213519/90063045-beb65380-dcb6-11ea-858f-403ea97bb673.png)
     
     # Caso 2: scipy.linalg.inv, overwrite=False
     - Se logró observar que el procesador se ejecutaba a un 70% aproximadamente, este es más alto que en el caso 1.
@@ -106,20 +106,22 @@
     - A continuación se muestran los gráficos para cada dtype:
     
     ![Caso_2_Half](https://user-images.githubusercontent.com/69213519/90063255-1654bf00-dcb7-11ea-90e5-fd2975710d8d.png)
+    ![Caso_2_Single](https://user-images.githubusercontent.com/69213519/90063505-7cd9dd00-dcb7-11ea-85b3-4679e9f128af.png)
     ![Caso_2_Double](https://user-images.githubusercontent.com/69213519/90063320-2a002580-dcb7-11ea-8587-03b8efa19ae1.png)
     ![Caso_2_LongDouble](https://user-images.githubusercontent.com/69213519/90070728-58cfc900-dcc2-11ea-8dae-2466d8729a68.png)
-    ![Caso_2_Single](https://user-images.githubusercontent.com/69213519/90063505-7cd9dd00-dcb7-11ea-85b3-4679e9f128af.png)
 
     # Caso 3: scipy.linalg.inv, overwrite=True
     
     - En este caso se logró que el procesador funcionara a un 86% aprox, lo que se debe a la condición overwrite=True.
      - Se puede bservar que para matrices de 3000 x 3000, con el tipo half, se demora 7 s y usa una memoria de 20 MB, en cambio con datos longdouble,se demora 5 s y usa una memoria de 100 MB. Además, para el long double y double ocupa la misma memoria en el caso de mi pc. Se puede concluir que este caso si resulta una ganancia de desempeño con la condición, además es el más eficiente. 
     
-    ![Caso_3_Double](https://user-images.githubusercontent.com/69213519/90064439-c840bb00-dcb8-11ea-902a-ff4f45e1e001.png)
     ![Caso_3_Half](https://user-images.githubusercontent.com/69213519/90064441-c8d95180-dcb8-11ea-8f10-1f5f2d03fdb1.png)
-    ![Caso_3_LongDouble](https://user-images.githubusercontent.com/69213519/90070682-435a9f00-dcc2-11ea-9f25-2cae469eddb7.png)
     ![Caso_3_Single](https://user-images.githubusercontent.com/69213519/90064447-c971e800-dcb8-11ea-9c55-b2ce95d3a545.png)
-    
+    ![Caso_3_Double](https://user-images.githubusercontent.com/69213519/90064439-c840bb00-dcb8-11ea-902a-ff4f45e1e001.png)
+    ![Caso_3_LongDouble](https://user-images.githubusercontent.com/69213519/90070682-435a9f00-dcc2-11ea-9f25-2cae469eddb7.png)
+
++ Análisis gráficos
+   + Como se puede observar en los gráficos anteriores, el tipo de datos más eficiente se encuentra entre el np.half y np.single, donde los tiempos que se demora para matrices de tamaño 2000, es de 0.1 s. En cambio, para los tipos de datos np.double y np.longdouble (que ocupan la misma memoria), estos se demoran 1 s para matrices de ese tamaño.
 + ¿Qué algoritmo de inversión cree que utiliza cada método?
   + Para todos los casos se utiliza Invertible Matrix, esta verifica que el determinante sea distinto de cero, es decir que sea singular, además debe ser cuadrada. Para el primer caso se usa un algoritmo con la libreria numpy, np.linalg.inv, que creo que utiliza eliminación de Gauss o una alternativa a esto es la descomposición LU. Para los dos siguiente con la libreria scipy, creo que usa Cailey-Hamilton, pues permite obtener el determinante y con esta misma matriz se obtienen las siguientes operaciones. 
   + También se utiliza Matriz laplaciana, esta es la representacion matricial de un grafo, en donde en este caso la diagonal tiene un vaor de 2, y sus diagonales en las posiciones i+1 e i-1 tienen un valor de -1. El resto de las posiciones tiene un valor de 0. 
