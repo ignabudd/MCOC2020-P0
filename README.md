@@ -83,6 +83,12 @@
 
 # Desempeño INV
 
+  + Tamaños de memoria
+    + Half: 2 bytes
+    + Single: 4 bytes
+    + Double: 8 Bytes
+    + Longdouble: 8 Bytes
+
   + Análisis desempeño 
     # Caso 1: Numpy.linalg.inv
     - En este caso no se pudo ejecutar no.half ni np.logdouble, pues no son compatibles con este.
@@ -115,7 +121,7 @@
     ![Caso_3_Single](https://user-images.githubusercontent.com/69213519/90064447-c971e800-dcb8-11ea-9c55-b2ce95d3a545.png)
     
 + ¿Qué algoritmo de inversión cree que utiliza cada método?
-  + Para todos los casos se utiliza Invertible Matrix, esta verifica que el determinante sea distinto de cero, es decir que sea singular, además debe ser cuadrada. Para el primer caso se usa un algoritmo con la libreria numpy, para los dos siguiente con la libreria scipy.
+  + Para todos los casos se utiliza Invertible Matrix, esta verifica que el determinante sea distinto de cero, es decir que sea singular, además debe ser cuadrada. Para el primer caso se usa un algoritmo con la libreria numpy, np.linalg.inv, que creo que utiliza eliminación de Gauss o una alternativa a esto es la descomposición LU. Para los dos siguiente con la libreria scipy, creo que usa Cailey-Hamilton, pues permite obtener el determinante y con esta misma matriz se obtienen las siguientes operaciones. 
   + También se utiliza Matriz laplaciana, esta es la representacion matricial de un grafo, en donde en este caso la diagonal tiene un vaor de 2, y sus diagonales en las posiciones i+1 e i-1 tienen un valor de -1. El resto de las posiciones tiene un valor de 0. 
 + ¿Cómo incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?
-  + El paralelismo significa que el procesador del comptador puede realizar varias actividades o tareas al mismo tiempo, por lo que su rendimiento se va a ver afectado si es que se estan ejecutando otros procesos. En este caso, se ve afetado su desempeño por los tipos de datos en cada caso y por la otras tareas que se están ejecutando. La estructura caché permite que los nucleos y servidores trabajen sobre los datos en paralelo, aprovechando al máximo la potencia. 
+  + El paralelismo significa que el procesador del comptador puede realizar varias actividades o tareas al mismo tiempo, por lo que su rendimiento se va a ver afectado si es que se estan ejecutando otros procesos, lo que hace es que el procesador divide ls problemas más grandes en más pequeños. En este caso, se ve afetado su desempeño por los tipos de datos en cada caso y por la otras tareas que se están ejecutando. La estructura caché permite que los nucleos y servidores trabajen sobre los datos en paralelo, aprovechando al máximo la potencia, utilizando L1, L1 y L3.
