@@ -127,3 +127,8 @@
   + También se utiliza Matriz laplaciana, esta es la representacion matricial de un grafo, en donde en este caso la diagonal tiene un vaor de 2, y sus diagonales en las posiciones i+1 e i-1 tienen un valor de -1. El resto de las posiciones tiene un valor de 0. 
 + ¿Cómo incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?
   + El paralelismo significa que el procesador del comptador puede realizar varias actividades o tareas al mismo tiempo, por lo que su rendimiento se va a ver afectado si es que se estan ejecutando otros procesos, lo que hace es que el procesador divide ls problemas más grandes en más pequeños. En este caso, se ve afetado su desempeño por los tipos de datos en cada caso y por la otras tareas que se están ejecutando. La estructura caché permite que los nucleos y servidores trabajen sobre los datos en paralelo, aprovechando al máximo la potencia, utilizando L1, L1 y L3.
+  
+ # Desempeño Ax=b
+ 
+ ![Grafico desempeño Ax b](https://user-images.githubusercontent.com/69213519/90294770-37531680-de55-11ea-8c65-ef2eff04f51e.png)
+
