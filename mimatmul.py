@@ -7,13 +7,13 @@ Created on Mon Aug 10 09:30:35 2020
 
 import numpy as np
 
-def mimatmul(A,B):
+def mimatmul1(A,B):
     print ("Implementar matmul a mano")
     C = np.dot(A,B)
     return C
 
 
-def mimatmul1(A,B):
+def mimatmul(A,B):
     print ("Implementar matmul a mano")
     res =[]
     for a in range(len(A)):
