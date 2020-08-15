@@ -131,4 +131,4 @@
  # Desempeño Ax=b
  
  ![Grafico desempeño Ax b](https://user-images.githubusercontent.com/69213519/90294770-37531680-de55-11ea-8c65-ef2eff04f51e.png)
-
+  + El máximo tamaño de matrices que corri fue de N = 5000, pues con una de N = 10000 se demoraba mucho tiempo en correr, mas de 10 minutos. En esta primera mencionada, se observa que se demoró aproximadamente 2 min para el caso de ivertir la matriz y luego multiplicarla por el vector, en cambio, para el caso de que lo resuelve de manera npsolve(A,B) se demoró 20-30 segundos aprox. eN comparación al gráfico del ayudante, el de él se demoraba 1 s y menos de 1 s para matrices de ese tamaño, en ambos casos respectivamente. Se logra concluir que np.solve(A,B) es más eficiente, tiene un mejor rendiemiento, ya que no realiza dos cálculos (dos pasos), como en el otro caso. 
