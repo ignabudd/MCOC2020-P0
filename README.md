@@ -131,7 +131,7 @@
  # Desempeño Ax=b (Parte 1)
  
  ![Grafico desempeño Ax b](https://user-images.githubusercontent.com/69213519/90294770-37531680-de55-11ea-8c65-ef2eff04f51e.png)
-  + El máximo tamaño de matrices que corri fue de N = 5000, pues con una de N = 10000 se demoraba mucho tiempo en correr, mas de 10 minutos. En esta primera mencionada, se observa que se demoró aproximadamente 2 min para el caso de ivertir la matriz y luego multiplicarla por el vector, en cambio, para el caso de que lo resuelve de manera npsolve(A,B) se demoró 20-30 segundos aprox. eN comparación al gráfico del ayudante, el de él se demoraba 1 s y menos de 1 s para matrices de ese tamaño, en ambos casos respectivamente. Se logra concluir que np.solve(A,B) es más eficiente, tiene un mejor rendimiento, ya que no realiza dos cálculos (dos pasos), como en el otro caso. 
+  + El máximo tamaño de matrices que corri fue de N = 5000, pues con una de N = 10000 se demoraba mucho tiempo en correr, mas de 10 minutos. En esta primera mencionada, se observa que se demoró aproximadamente 2 min para el caso de ivertir la matriz y luego multiplicarla por el vector, en cambio, para el caso de que lo resuelve de manera npsolve(A,B) se demoró 20-30 segundos aprox. En comparación al gráfico del ayudante, el de él se demoraba 1 s y menos de 1 s para matrices de ese tamaño, en ambos casos respectivamente. Se logra concluir que np.solve(A,B) es más eficiente, tiene un mejor rendimiento, ya que no realiza dos cálculos (dos pasos), como en el otro caso. 
 
  # Desempeño Ax=b (Parte 2)
  
@@ -141,4 +141,6 @@
  + Se puede observar que la matrices de al rededor de tamaño N = 50 presentan algunos peaks con los solvers. Esto se puede deber a que el computador empieza a utilizar más el procesador, es decir con un mayor porcentaje. 
  + Para matrices muy grandes se logra apreciar una diferencia entre los solver de mayor y menor eficiencia. La función mas lenta es A_invB_inv, la cual era de esperarse, pues invierte la matriz y luego la multiplica por el vector de unos, en vez de utilizar directamente el solver. El solver np.solve no destaca entre los más rápidos para matrices grandes, el cual presenta una demora bastante parecida al solver de Scipy sp.solve.
  + Por último, para los solvers de scipy, destaca el más rápido cuando se detalla que la matriz es simétrica y positiva (color café), es decir la función A_inv_spsolve_pos_overwrite, pues esta optimiza el cálculo de manera que puede sobreescribir y además toma los valores del triangulo de arriba.  
+ 
+ + En comparación al gráfico de Felipe Elgueta se puede observar la misma tendencia, en un comienzo con matrices pequeñas su solver más rapido es np.solve, al igual que el mio, y a medida que realiza con matrices de tamaños muy grandes el más eficiente es A_inv_spsolve_pos_overwrite. Se comportan de la misma manera, a excepción de que el mio, al tener un procesador más básico, menos memoria caché, como se mencionó en un análisis anterior, se demora muchisimo más para el calculo de matrices grandes. 
  
