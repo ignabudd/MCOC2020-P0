@@ -145,7 +145,11 @@
  + En comparación al gráfico de Felipe Elgueta se puede observar la misma tendencia, en un comienzo con matrices pequeñas su solver más rapido es np.solve, al igual que el mio, y a medida que realiza con matrices de tamaños muy grandes el más eficiente es A_inv_spsolve_pos_overwrite. Se comportan de la misma manera, a excepción de que el mio, al tener un procesador más básico, menos memoria caché, como se mencionó en un análisis anterior, se demora muchisimo más para el calculo de matrices grandes. 
  
 # Matrices Dispersas y Complejidad Algorítmica 
-
+  + Codigo ensamblado
+  
+   
+  
+  
   + Complejidad Algorítmica de MATMUL 
   ![MATMUL Dispersa](https://user-images.githubusercontent.com/69213519/90939819-c4104e00-e3da-11ea-8803-55586d5560fb.png)
   ![MATMUL Llena](https://user-images.githubusercontent.com/69213519/90939820-c4a8e480-e3da-11ea-934b-01fc7f7a6725.png)
