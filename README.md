@@ -145,23 +145,46 @@
  + En comparación al gráfico de Felipe Elgueta se puede observar la misma tendencia, en un comienzo con matrices pequeñas su solver más rapido es np.solve, al igual que el mio, y a medida que realiza con matrices de tamaños muy grandes el más eficiente es A_inv_spsolve_pos_overwrite. Se comportan de la misma manera, a excepción de que el mio, al tener un procesador más básico, menos memoria caché, como se mencionó en un análisis anterior, se demora muchisimo más para el calculo de matrices grandes. 
  
 # Matrices Dispersas y Complejidad Algorítmica 
-  + Codigo ensamblado
-  
-   ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941267-9da0e180-e3df-11ea-99bd-4f36c21b1830.PNG)
+  + Codigo ensamblados
+    ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941418-143ddf00-e3e0-11ea-8e71-aa82dbc59653.PNG)
 
-   
-  
-  
   + Complejidad Algorítmica de MATMUL 
-  ![MATMUL Dispersa](https://user-images.githubusercontent.com/69213519/90939819-c4104e00-e3da-11ea-8803-55586d5560fb.png)
   ![MATMUL Llena](https://user-images.githubusercontent.com/69213519/90939820-c4a8e480-e3da-11ea-934b-01fc7f7a6725.png)
+  ![MATMUL Dispersa](https://user-images.githubusercontent.com/69213519/90939819-c4104e00-e3da-11ea-8803-55586d5560fb.png)
+  
+  + Análisis Diferencias Algorítmicas
+     + El tiempo de solución de las matrices llenas mucho mayor que el de las dispersas, donde en matrices de tamaño N = 8000, se demoraba 1 min para aquellas llenas y 0.1 s para las dispersas.
+     + 
+      
+  + Complejidad Ensamblado/Solución para ambos casos
+  
+  + Tamaño de las matrices N al comportamiento
+  
+  + Estabilidad de las corridas
+  
+  
+  
   
   + Complejidad Algorítmica de SOLVE
-  ![SOLVE Dispersa](https://user-images.githubusercontent.com/69213519/90939821-c4a8e480-e3da-11ea-94ab-75ece3d3bf66.png)
   ![SOLVE Llena](https://user-images.githubusercontent.com/69213519/90939826-c5417b00-e3da-11ea-94d4-b45bbfd7983b.png)
+  ![SOLVE Dispersa](https://user-images.githubusercontent.com/69213519/90939821-c4a8e480-e3da-11ea-94ab-75ece3d3bf66.png)
+  
+  + Análisis Diferencias Algorítmicas
+  
+  + Complejidad Ensamblado/Solución para ambos casos
+  
+  + Tamaño de las matrices N al comportamiento
+  
+  + Estabilidad de las corridas
 
   + Complejidad Algorítmica de INV
-  ![INV Dispersa](https://user-images.githubusercontent.com/69213519/90939816-c2468a80-e3da-11ea-94c2-944b05a41107.png)
   ![INV Llena](https://user-images.githubusercontent.com/69213519/90939818-c377b780-e3da-11ea-9df8-3e03e9a2d00e.png)
+  ![INV Dispersa](https://user-images.githubusercontent.com/69213519/90939816-c2468a80-e3da-11ea-94c2-944b05a41107.png)
 
-
+  + Análisis Diferencias Algorítmicas
+ 
+  + Complejidad Ensamblado/Solución para ambos casos
+  
+  + Tamaño de las matrices N al comportamiento
+  
+  + Estabilidad de las corridas
