@@ -147,6 +147,8 @@
 # Matrices Dispersas y Complejidad Algorítmica 
   + Codigo ensamblado
   
+   ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941267-9da0e180-e3df-11ea-99bd-4f36c21b1830.PNG)
+
    
   
   
