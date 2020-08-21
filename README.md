@@ -144,3 +144,4 @@
  
  + En comparación al gráfico de Felipe Elgueta se puede observar la misma tendencia, en un comienzo con matrices pequeñas su solver más rapido es np.solve, al igual que el mio, y a medida que realiza con matrices de tamaños muy grandes el más eficiente es A_inv_spsolve_pos_overwrite. Se comportan de la misma manera, a excepción de que el mio, al tener un procesador más básico, menos memoria caché, como se mencionó en un análisis anterior, se demora muchisimo más para el calculo de matrices grandes. 
  
+# Matrices Dispersas y Complejidad Algorítmica 
