@@ -167,7 +167,7 @@
   
   
   + Estabilidad de las corridas
-    +
+    + Se hicieron 5 corridas y luego se graficó el promedio de estos, en donde se puede ver una estabilidad a partir de 
     +
     +
     
