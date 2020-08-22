@@ -146,22 +146,31 @@
  
 # Matrices Dispersas y Complejidad Algorítmica 
   + Codigo ensamblados
+  
     ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941418-143ddf00-e3e0-11ea-8e71-aa82dbc59653.PNG)
 
-  + Complejidad Algorítmica de MATMUL 
+  + COMPLEJIDAD ALGORÍTMICA DE MATMUL 
   ![MATMUL Llena](https://user-images.githubusercontent.com/69213519/90939820-c4a8e480-e3da-11ea-934b-01fc7f7a6725.png)
   ![MATMUL Dispersa](https://user-images.githubusercontent.com/69213519/90939819-c4104e00-e3da-11ea-8803-55586d5560fb.png)
   
   + Análisis Diferencias Algorítmicas
      + El tiempo de solución de las matrices llenas mucho mayor que el de las dispersas, donde en matrices de tamaño N = 8000, se demoraba 1 min para aquellas llenas y 0.1 s para las dispersas.
-     + 
-      
+     + El tiempo de ensamblado para ambos casos es bastante similar, para matrices pequeñas es más rapido el caso de matrices llenas, con una demora de 0.1 ms, mientras que matrices llenas tienen una demora de 1, ambos se mantienen constantes.
+     + A medida que aunmenta el tamaño N, se observa que el tiempo de solución aumenta significativamente en el caso de las matrices llenas, mientras que en el otro caso se mantiene constante, hasta N =  500, que empieza un pequeño aumento.
+     
   + Complejidad Ensamblado/Solución para ambos casos
-  
+     + El tiempo de ensamblado, cuando N tiende a infinito, tiende a orden O(N^2), para matrices dispersas y matrices llenas, esto puede ser debido a que elcodigo es casi siemrpre el mismo para estos casos, por lo que al incrementar en una unidad el tamaño de matriz, aumentará el tiempo al cuadrado.
+     + El tiempo de solución, para matrices llenas tiene una complejidad asintótica O(N^3), mientras que para matrices dispersas presenta una tendencia de O(N^2), ya que las matrices dispersas no toman en cuentan los "0", pero si la estructura de la matriz, por lo que baja el tiempo de solución, pero en el primer caso, toma mas tiempo ya que tiene que recorrer toda la matriz.
+
   + Tamaño de las matrices N al comportamiento
+    + El tamaño de la matriz N afecta directamente al tiempo que se demora en ensamblar o en solucionar el problema, como se puede ver en todos los casos, estos tiempos se mantienen constantes tanto para matrices llenas como para dispersas, manteniendo una tendencia algorítmica, esto se puede ver para matrices de tamaños mas grandes. Para el caso de matrices de tamaño N < 100, ninguno de los casos es constante, ya que en un principio hay procesos que afectan la partida de la ejecución
+  
   
   + Estabilidad de las corridas
-  
+    +
+    +
+    +
+    
   
   
   
@@ -170,6 +179,9 @@
   ![SOLVE Dispersa](https://user-images.githubusercontent.com/69213519/90939821-c4a8e480-e3da-11ea-94ab-75ece3d3bf66.png)
   
   + Análisis Diferencias Algorítmicas
+    + El tiempo de solución de la matriz llena es mucho mas alta que el de la matriz dispersa, en donde en este último el tiempo que se demora para invertir matrices de N = 8000, es de 10 ms, mientras que para matrices llenas se demora 1 min, para aquellas del mismo tamaño.
+    +  El tiempo de ensamblado para ambos casos es muy similar, de manera que para matrices grandes, ambos presentan la misma complejdad aintótica y el mismo tiempo de demora para el maximo tamaño de N, es decir, 1 min. 
+    
   
   + Complejidad Ensamblado/Solución para ambos casos
   
@@ -182,6 +194,8 @@
   ![INV Dispersa](https://user-images.githubusercontent.com/69213519/90939816-c2468a80-e3da-11ea-94c2-944b05a41107.png)
 
   + Análisis Diferencias Algorítmicas
+    + El tiemo de ensamblado para matrices pequeñas es menor para las matrices llenas, presentando una demora menor a 0.1 ms, mientras que en el caso de dispersas, presenta una demora de 1 ms. A medida que aumenta el tamaño de N, ambas presentan una tendencia bastante similar, al igual que en los casos anteriores, llegando a demorarse un poco mas de 10 s para el tamaño de matriz máximo.
+    + El tiempo de solución para matrices pequeñas llenas es bastante menor, sin embargo, a medida que aumenta el tamaño de N, el complejo asintotico es distinto, demorandose el mismo tiempo para el tamaño máximo de matriz, 1 min.
  
   + Complejidad Ensamblado/Solución para ambos casos
   
