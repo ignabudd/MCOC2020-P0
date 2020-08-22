@@ -145,9 +145,6 @@
  + En comparación al gráfico de Felipe Elgueta se puede observar la misma tendencia, en un comienzo con matrices pequeñas su solver más rapido es np.solve, al igual que el mio, y a medida que realiza con matrices de tamaños muy grandes el más eficiente es A_inv_spsolve_pos_overwrite. Se comportan de la misma manera, a excepción de que el mio, al tener un procesador más básico, menos memoria caché, como se mencionó en un análisis anterior, se demora muchisimo más para el calculo de matrices grandes. 
  
 # Matrices Dispersas y Complejidad Algorítmica 
-  + Codigo ensamblados
-  
-    ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941418-143ddf00-e3e0-11ea-8e71-aa82dbc59653.PNG)
 
   ## COMPLEJIDAD ALGORÍTMICA DE MATMUL 
   ![MATMUL Llena](https://user-images.githubusercontent.com/69213519/90939820-c4a8e480-e3da-11ea-934b-01fc7f7a6725.png)
@@ -207,4 +204,15 @@
   + Estabilidad de las corridas
     + Se puede observar que las corridas son bastanes estables, sin embargo en las matrices llenas presenta ciertas inestabilidades al comienzo con matrices mas pequeñas. 
     
+ ## Código ensamblados
+  
+   ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941418-143ddf00-e3e0-11ea-8e71-aa82dbc59653.PNG)   
+    
+  + Ambos códigos de ensables utilizas ciclos for que van llenando los espacios de las matrices, donde recorre la matriz de una manera no tan óptima, que pudo haber sido uno de los factores por lo que el tiempo no era el más eficaz, y por lo que se pudo llegar solamente a un tamaño maximo de N = 8000. Quizas, se tuvo que haber implementado otro código de ensable que no utilizara tantos ciclos for, ya que esto hace que sea mucho más lento el llenado, a pesar de que se está implementado "csc" para la matriz dispersa. 
+
+ 
+ 
+ 
+ 
+ 
     
