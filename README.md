@@ -170,7 +170,7 @@
     + Se hicieron 5 corridas y luego se graficó el promedio de estos, en donde se puede ver una estabilidad a partir de N = 100-150, en donde tienden a la recta asintótica. Se puede observar en algunos casos que presenta ciertos peaks o desbalances en donde se vio afectado el tiempo, donde se le puede atribuir a que se estaban ejectutando otros programas.
     + Mientras mayor es el numero N, mayor es la estabilidad, por lo que el algoritmo se vuelve más eficiente, como en el caso de la matriz dispersa, en donde este es mas estable ya que considera la estructura de la matriz, de manera que no se usa el procesador para ejecutar los valores que no considera. 
 
-  + COMPLEJIDAD ALGORÍTMICA DE SOLVE
+  ## COMPLEJIDAD ALGORÍTMICA DE SOLVE
   ![SOLVE Llena](https://user-images.githubusercontent.com/69213519/90939826-c5417b00-e3da-11ea-94d4-b45bbfd7983b.png)
   ![SOLVE Dispersa](https://user-images.githubusercontent.com/69213519/90939821-c4a8e480-e3da-11ea-94ab-75ece3d3bf66.png)
   
