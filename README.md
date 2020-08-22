@@ -149,7 +149,7 @@
   
     ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941418-143ddf00-e3e0-11ea-8e71-aa82dbc59653.PNG)
 
-  + COMPLEJIDAD ALGORÍTMICA DE MATMUL 
+  ## COMPLEJIDAD ALGORÍTMICA DE MATMUL 
   ![MATMUL Llena](https://user-images.githubusercontent.com/69213519/90939820-c4a8e480-e3da-11ea-934b-01fc7f7a6725.png)
   ![MATMUL Dispersa](https://user-images.githubusercontent.com/69213519/90939819-c4104e00-e3da-11ea-8803-55586d5560fb.png)
   
@@ -189,7 +189,7 @@
   + Estabilidad de las corridas
     + Se observa una estabilidad a partir de N = 50 para ambos casos. Todas las corridas son parecidas, por lo que se puede decir que es bastante estable casi sin diferencias, ya que mientras aumenta el tamaño de N, empieza a utilizar la memoria RAM. 
 
-  + COMPLEJIDAD ALGORÍTMICA DE INV
+  ## COMPLEJIDAD ALGORÍTMICA DE INV
   ![INV Llena](https://user-images.githubusercontent.com/69213519/90939818-c377b780-e3da-11ea-9df8-3e03e9a2d00e.png)
   ![INV Dispersa](https://user-images.githubusercontent.com/69213519/90939816-c2468a80-e3da-11ea-94c2-944b05a41107.png)
 
