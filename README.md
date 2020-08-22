@@ -167,14 +167,10 @@
   
   
   + Estabilidad de las corridas
-    + Se hicieron 5 corridas y luego se graficó el promedio de estos, en donde se puede ver una estabilidad a partir de 
-    +
-    +
-    
-  
-  
-  
-  + Complejidad Algorítmica de SOLVE
+    + Se hicieron 5 corridas y luego se graficó el promedio de estos, en donde se puede ver una estabilidad a partir de N = 100-150, en donde tienden a la recta asintótica. Se puede observar en algunos casos que presenta ciertos peaks o desbalances en donde se vio afectado el tiempo, donde se le puede atribuir a que se estaban ejectutando otros programas.
+    + Mientras mayor es el numero N, mayor es la estabilidad, por lo que el algoritmo se vuelve más eficiente, como en el caso de la matriz dispersa, en donde este es mas estable ya que considera la estructura de la matriz, de manera que no se usa el procesador para ejecutar los valores que no considera. 
+
+  + COMPLEJIDAD ALGORÍTMICA DE SOLVE
   ![SOLVE Llena](https://user-images.githubusercontent.com/69213519/90939826-c5417b00-e3da-11ea-94d4-b45bbfd7983b.png)
   ![SOLVE Dispersa](https://user-images.githubusercontent.com/69213519/90939821-c4a8e480-e3da-11ea-94ab-75ece3d3bf66.png)
   
@@ -184,12 +180,16 @@
     
   
   + Complejidad Ensamblado/Solución para ambos casos
+    + El tiempo de ensamblado es casi el mismo para ambos casos, de manera que tienen una coplejidad asintotica O(N^2), debido a los ciclos for. 
+    + El tiempo de solución para el caso de resolver ecuaciones de matrices llenas tiende O(N^3), mientras que para matrices dispersas tiene a O(N). La demora se puede deber a que se cambia la matriz al tipo "csc" para el caso de las dispersas.
   
   + Tamaño de las matrices N al comportamiento
+    +  Como se mencionó en el caso anterior, el tamaño de la matriz afecta al tiempo de demora. Se observa que, para matrices pequeñas, hay veces que se demora más de lo que debería, esto se debe a que puede que se hayan estado ejecutando otro programas. A medida que va aumentando se observa un aumento muy leve para el caso del tiempo de solución para ambos casos entre N = 50 - 200. Con matrices más grandes se observa ya una tendencia algorítmica , con tiempos bastante similares. 
   
   + Estabilidad de las corridas
+    + Se observa una estabilidad a partir de N = 50 para ambos casos. Todas las corridas son parecidas, por lo que se puede decir que es bastante estable casi sin diferencias, ya que mientras aumenta el tamaño de N, empieza a utilizar la memoria RAM. 
 
-  + Complejidad Algorítmica de INV
+  + COMPLEJIDAD ALGORÍTMICA DE INV
   ![INV Llena](https://user-images.githubusercontent.com/69213519/90939818-c377b780-e3da-11ea-9df8-3e03e9a2d00e.png)
   ![INV Dispersa](https://user-images.githubusercontent.com/69213519/90939816-c2468a80-e3da-11ea-94c2-944b05a41107.png)
 
@@ -198,7 +198,13 @@
     + El tiempo de solución para matrices pequeñas llenas es bastante menor, sin embargo, a medida que aumenta el tamaño de N, el complejo asintotico es distinto, demorandose el mismo tiempo para el tamaño máximo de matriz, 1 min.
  
   + Complejidad Ensamblado/Solución para ambos casos
+    + En el caso del tiempo de ensamblado, para matrices llenas y dispersas, sigue teniendo la misma tendencia a O(N^2)
+    + Para matrices llenas, el tiempo de solución tiende a O(N^3), mientras que para matrices dispersas, para aquellas de tamaño N<1000 presenta una tendencia de O(N), y para N>1000, tiende a O(N^2), es decir que mientras se aumenta el tamaño de N, el tiempo se duplica, mientras que en las matrices llenas se triplica. Esto se debe a que la dispersa se evita los calculos engorrosos al momento de invertir la matriz, de manera de "ignorar" los 0 que se presentan. 
   
   + Tamaño de las matrices N al comportamiento
+    + Como se mencionó anteriormente, se cumple lo mismo, a medida que aumenta el numero de N, aumenta el tiempo de ejecución, sin embargo, para el caso de la matriz dispersa, no es tan significativamente el aumento el tiempo de solución, en comparación a la matriz llena. 
   
   + Estabilidad de las corridas
+    + Se puede observar que las corridas son bastanes estables, sin embargo en las matrices llenas presenta ciertas inestabilidades al comienzo con matrices mas pequeñas. 
+    
+    
