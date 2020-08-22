@@ -205,9 +205,27 @@
     + Se puede observar que las corridas son bastanes estables, sin embargo en las matrices llenas presenta ciertas inestabilidades al comienzo con matrices mas pequeñas. 
     
  ## Código ensamblados
-  
-   ![codigo ensamblados](https://user-images.githubusercontent.com/69213519/90941418-143ddf00-e3e0-11ea-8e71-aa82dbc59653.PNG)   
+    ''' def matriz_laplaceana_llena(N,d=double):
+        A = zeros((N,N), dtype=d)
+        fill_diagonal(A, 2)
+        for i in range(N):
+            for j in range(N):
+                if i+1 == j or i-1 == j:
+                    A[i][j] = -1
     
+        return A  
+
+
+        def matriz_laplaceana_dispersa(N,d=double):
+        A = zeros((N,N), dtype=d)
+        fill_diagonal(A, 2)
+        for i in range(N):
+            for j in range(N):
+                if i+1 == j or i-1 == j:
+                    A[i][j] = -1
+    
+        return csc_matrix(A)     ''' 
+
   + Ambos códigos de ensables utilizas ciclos for que van llenando los espacios de las matrices, donde recorre la matriz de una manera no tan óptima, que pudo haber sido uno de los factores por lo que el tiempo no era el más eficaz, y por lo que se pudo llegar solamente a un tamaño maximo de N = 8000. Quizas, se tuvo que haber implementado otro código de ensable que no utilizara tantos ciclos for, ya que esto hace que sea mucho más lento el llenado, a pesar de que se está implementado "csc" para la matriz dispersa. 
 
  
